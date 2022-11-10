@@ -16,3 +16,32 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.field {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 60px;
+  height: 60px;
+  flex-direction: column;
+  align-content: space-between;
+  /* align-items: center; */
+}
+.label {
+  font-size: 12px;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.value {
+  display: block;
+  width: 60px;
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(7, 7, 60);
+  align-items: center;
+}
+
+button {
+  width: 50px;
+  border-radius: 10px;
+}
