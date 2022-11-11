@@ -25,12 +25,12 @@ function handleClickBtn(e) {
       .then(({ position, delay }) => {
         setTimeout(() => {
           Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`);
-        }, delay);
+        });
       })
       .catch(({ position, delay }) => {
         setTimeout(() => {
           Notify.warning(`❌ Rejected promise ${position} in ${delay}ms`);
-        }, delay);
+        });
       });
     delay += step;
   }
